@@ -91,19 +91,6 @@ private:
     static std::string generate_id();
 };
 
-// -----------------------------------------------------------------------------
-// Option A (we chose this):
-// Resolve an absolute path from the workspace root by traversing DOWN only.
-//
-// Examples:
-//   resolve_path(workspace, "/") -> workspace
-//   resolve_path(workspace, "/Tetris Clone/UI/") -> node "UI" (if exists)
-//   resolve_path(workspace, "/DoesNotExist") -> nullptr
-//
-// Notes:
-// - ignores repeated and trailing slashes
-// - does NOT interpret "." or ".."
-// -----------------------------------------------------------------------------
 TaskNode::Ptr resolve_path(
     const TaskNode::Ptr& workspace_root,
     std::string_view absolute_path

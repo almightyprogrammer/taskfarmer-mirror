@@ -67,7 +67,6 @@ void HttpServer::register_api_endpoint() {
                     );
                 }
 
-                // ✅ parent_id
                 if (!body.contains("parent_id") || !body["parent_id"].is_string()) {
                     return set_json(
                         res,
@@ -76,7 +75,6 @@ void HttpServer::register_api_endpoint() {
                     );
                 }
 
-                // ✅ title
                 if (!body.contains("title") || !body["title"].is_string()) {
                     return set_json(
                         res,
@@ -102,7 +100,6 @@ void HttpServer::register_api_endpoint() {
                         ? static_cast<TaskPriority>(body["priority"].get<int>())
                         : TaskPriority::MEDIUM;
 
-                // ✅ Create
                 TaskNode::Ptr created = service_.create_with_parent_id(
                     parent_id,
                     title,
@@ -222,7 +219,7 @@ void HttpServer::register_api_endpoint() {
                 try {
                     deleted = service_.delete_subtree(id);
                 } catch (const std::runtime_error& e) {
-                    // Handle specific domain errors
+
                     std::string msg = e.what();
 
                     if (msg.find("refusing to delete root") != std::string::npos) {

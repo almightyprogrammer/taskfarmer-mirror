@@ -597,10 +597,6 @@ bool Database::update_task_fields(const TaskNode& node) {
         throw_sqlite(db_, rc, "[ERROR] Update task fields not completed.");
     }
 
-    // ✅ IMPORTANT FIX:
-    // sqlite3_changes == 0 does NOT mean "row not found".
-    // It means "no values changed".
-    // A successful UPDATE should be treated as success.
     sqlite3_finalize(stmt);
     return true;
 }

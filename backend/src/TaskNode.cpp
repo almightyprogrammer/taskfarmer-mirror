@@ -10,11 +10,7 @@
 
 namespace {
 
-// Splits a path into segments, ignoring repeated/trailing slashes.
-// Examples:
-//   "/" -> {}
-//   "/A/B/C/" -> {"A","B","C"}
-//   "///A//B" -> {"A","B"}
+
 std::vector<std::string_view> split_path(std::string_view path) {
     std::vector<std::string_view> parts;
 
@@ -42,7 +38,7 @@ std::vector<std::string_view> split_path(std::string_view path) {
     return parts;
 }
 
-} // namespace
+} 
 
 TaskNode::TaskNode(std::string title, std::string description)
     : id_(generate_id()),
