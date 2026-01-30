@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskfarmer_core.a CMakeFiles/taskfarmer_core.dir/src/TaskNode.cpp.o CMakeFiles/taskfarmer_core.dir/src/Database.cpp.o CMakeFiles/taskfarmer_core.dir/src/HttpServer.cpp.o CMakeFiles/taskfarmer_core.dir/src/TaskService.cpp.o CMakeFiles/taskfarmer_core.dir/src/Rbac.cpp.o CMakeFiles/taskfarmer_core.dir/src/UserService.cpp.o CMakeFiles/taskfarmer_core.dir/src/Authoriser.cpp.o
+/usr/bin/ranlib libtaskfarmer_core.a
