@@ -1,0 +1,58 @@
+/* ✅ Win98 pixel font */
+@font-face {
+  font-family: "Win98Pixel";
+  src: url("/fonts/PxPlus_IBM_VGA8.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.win98-navbar {
+  height: 40px;
+  background: #000080; 
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  font-family: "MS Sans Serif", Tahoma, sans-serif;
+  font-size: 13px;
+  color: white;
+}
+
+
+.win98-navbar-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  user-select: none;
+}
+
+.win98-title-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.win98-title-text {
+  font-family: "Win98Pixel", "MS Sans Serif", Tahoma, sans-serif;
+  font-size: 32px;
+  letter-spacing: 0.5px;
+  text-transform: lowercase;
+  color: white;
+  text-shadow: 1px 1px #000000; /* subtle Win98 depth */
+}
+
+.win98-navbar-spacer {
+  flex: 1;
+}
+
+.win98-navbar button {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #ffffff #404040 #404040 #ffffff;
+  padding: 2px 8px;
+  font-family: inherit;
+  font-size: 12px;
+  cursor: default;
+}
+
+.win98-navbar button:active {
+  border-color: #404040 #ffffff #ffffff #404040;
+}

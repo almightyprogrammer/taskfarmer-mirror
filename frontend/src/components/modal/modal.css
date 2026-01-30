@@ -1,0 +1,88 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-window {
+  width: 320px;
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #ffffff #404040 #404040 #ffffff;
+  padding: 8px;
+  font-family: "MS Sans Serif", Tahoma, Arial, sans-serif;
+  font-size: 13px;
+}
+
+.modal-title {
+  background: #000080;
+  color: white;
+  padding: 4px 6px;
+  font-weight: bold;
+  margin: -8px -8px 8px -8px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.modal-content label {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+  background: white;
+  border: 2px solid;
+  border-color: #404040 #ffffff #ffffff #404040;
+  padding: 2px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.modal-buttons button {
+  min-width: 70px;
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #ffffff #404040 #404040 #ffffff;
+  font-family: inherit;
+  cursor: default;
+}
+
+.modal-buttons button:active {
+  border-color: #404040 #ffffff #ffffff #404040;
+}
+
+
+.win98-button {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #ffffff #404040 #404040 #ffffff;
+  padding: 2px 8px;
+  font-family: "MS Sans Serif", Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+.win98-button:active {
+  border-color: #404040 #ffffff #ffffff #404040;
+}
+
+.tree-node {
+  position: relative;
+}

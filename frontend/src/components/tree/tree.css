@@ -1,0 +1,158 @@
+/* Toolbar */
+.win98-toolbar {
+  background: #c0c0c0;
+  border-bottom: 2px solid #404040;
+  padding: 4px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-family: "MS Sans Serif", Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+.win98-toolbar button {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #ffffff #404040 #404040 #ffffff;
+  padding: 2px 6px;
+}
+
+.win98-toolbar button:active {
+  border-color: #404040 #ffffff #ffffff #404040;
+}
+
+.win98-path {
+  margin-left: auto;
+  background: white;
+  border: 2px inset;
+  padding: 2px 6px;
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.tree-container {
+  height: 100%;
+  overflow: auto;
+  background: #c0c0c0;
+}
+
+.tree-node {
+  display: flex;
+  align-items: center;
+  padding: 2px 4px;
+  cursor: default;
+}
+
+.tree-node:hover {
+  background: #dcdcdc;
+}
+
+.tree-node.selected {
+  background: #000080;
+  color: white;
+}
+
+.tree-node-icon {
+  width: 18px;
+  margin-right: 4px;
+}
+
+.tree-children {
+  margin-left: 14px;
+  border-left: 1px dotted #808080;
+  padding-left: 8px;
+}
+
+.priority-low { color: #006400; }
+.priority-medium { color: #9a6b00; }
+.priority-high { color: #b34700; }
+.priority-critical {
+  color: #800000;
+  font-weight: bold;
+}
+
+.tree-node-details {
+  margin-left: 24px;
+  padding: 4px 6px;
+  background: #e0e0e0;
+  border: 1px solid #808080;
+  font-size: 11px;
+  font-family: "MS Sans Serif", Tahoma, sans-serif;
+}
+
+.tree-node-desc {
+  font-style: italic;
+  margin-bottom: 4px;
+}
+
+.tree-node-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.tree-node-title {
+  line-height: 14px;
+}
+
+.tree-node-meta {
+  font-size: 10px;
+  color: #404040;
+  display: flex;
+  gap: 4px;
+}
+
+.meta-dot {
+  color: #808080;
+}
+
+.meta-status {
+  font-style: italic;
+}
+
+.meta-time {
+  color: #606060;
+}
+
+.tree-node-description {
+  margin-left: 28px;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  font-size: 11px;
+  color: #404040;
+  font-style: italic;
+}
+
+.tree-node {
+  position: relative;
+}
+
+
+.tree-container {
+  height: 100%;
+  overflow: auto;
+  background: #c0c0c0;
+}
+
+.tree-node {
+  padding: 2px 4px;
+  cursor: default;
+}
+
+.tree-node.selected {
+  background: #000080;
+  color: white;
+}
+
+.tree-children {
+  margin-left: 18px;
+  border-left: 1px dotted #808080;
+  padding-left: 8px;
+}
+
+.tree-node-description {
+  font-size: 11px;
+  font-style: italic;
+  color: #404040;
+  margin: 2px 0 4px 0;
+}
